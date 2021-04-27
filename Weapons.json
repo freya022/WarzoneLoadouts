@@ -1865,7 +1865,7 @@
     {
       "game": "MODERN_WARFARE",
       "primary": true,
-      "locked": false,
+      "locked": true,
       "category": "Fusils d\u0027assaut",
       "name": "Grau 5.56",
       "id": 8,
@@ -2511,7 +2511,7 @@
     {
       "game": "MODERN_WARFARE",
       "primary": true,
-      "locked": false,
+      "locked": true,
       "category": "Fusils d\u0027assaut",
       "name": "AN-94",
       "id": 10,
@@ -3820,7 +3820,7 @@
     {
       "game": "MODERN_WARFARE",
       "primary": true,
-      "locked": false,
+      "locked": true,
       "category": "Fusils d\u0027assaut",
       "name": "CR-56 AMAX",
       "id": 15,
@@ -3838,7 +3838,7 @@
     {
       "game": "MODERN_WARFARE",
       "primary": true,
-      "locked": false,
+      "locked": true,
       "category": "Fusils d\u0027assaut",
       "name": "AS VAL",
       "id": 17,
@@ -3865,7 +3865,7 @@
     {
       "game": "MODERN_WARFARE",
       "primary": true,
-      "locked": false,
+      "locked": true,
       "category": "Fusils d\u0027assaut",
       "name": "RAM-7",
       "id": 20,
@@ -4433,7 +4433,7 @@
     {
       "game": "MODERN_WARFARE",
       "primary": true,
-      "locked": false,
+      "locked": true,
       "category": "Mitraillettes",
       "name": "Fennec",
       "id": 26,
@@ -5524,7 +5524,7 @@
     {
       "game": "MODERN_WARFARE",
       "primary": true,
-      "locked": false,
+      "locked": true,
       "category": "Mitraillettes",
       "name": "Striker 45",
       "id": 33,
@@ -5817,7 +5817,7 @@
     {
       "game": "MODERN_WARFARE",
       "primary": true,
-      "locked": false,
+      "locked": true,
       "category": "Mitraillettes",
       "name": "ISO",
       "id": 37,
@@ -6020,7 +6020,7 @@
     {
       "game": "MODERN_WARFARE",
       "primary": true,
-      "locked": false,
+      "locked": true,
       "category": "Fusils Ã  pompe",
       "name": "JAK-12",
       "id": 40,
@@ -6250,7 +6250,7 @@
     {
       "game": "MODERN_WARFARE",
       "primary": true,
-      "locked": false,
+      "locked": true,
       "category": "Fusils Ã  pompe",
       "name": "VLK Rogue",
       "id": 46,
@@ -6534,7 +6534,7 @@
     {
       "game": "MODERN_WARFARE",
       "primary": true,
-      "locked": false,
+      "locked": true,
       "category": "Mitrailleuses",
       "name": "Bruen Mk9",
       "id": 49,
@@ -6543,7 +6543,7 @@
     {
       "game": "MODERN_WARFARE",
       "primary": true,
-      "locked": false,
+      "locked": true,
       "category": "Mitrailleuses",
       "name": "Holger-26",
       "id": 50,
@@ -7111,7 +7111,7 @@
     {
       "game": "MODERN_WARFARE",
       "primary": true,
-      "locked": false,
+      "locked": true,
       "category": "Mitrailleuses",
       "name": "Mitrailleuse Finn",
       "id": 56,
@@ -8202,7 +8202,7 @@
     {
       "game": "MODERN_WARFARE",
       "primary": true,
-      "locked": false,
+      "locked": true,
       "category": "Fusils tactiques",
       "name": "SP-R 208",
       "id": 63,
@@ -8211,7 +8211,7 @@
     {
       "game": "MODERN_WARFARE",
       "primary": true,
-      "locked": false,
+      "locked": true,
       "category": "Fusils tactiques",
       "name": "SKS",
       "id": 64,
@@ -8220,7 +8220,7 @@
     {
       "game": "MODERN_WARFARE",
       "primary": true,
-      "locked": false,
+      "locked": true,
       "category": "Fusils tactiques",
       "name": "EBR-14",
       "id": 65,
@@ -8229,7 +8229,7 @@
     {
       "game": "MODERN_WARFARE",
       "primary": true,
-      "locked": false,
+      "locked": true,
       "category": "Fusils tactiques",
       "name": "ArbalÃ¨te",
       "id": 0,
@@ -8238,7 +8238,7 @@
     {
       "game": "COLD_WAR",
       "primary": true,
-      "locked": false,
+      "locked": true,
       "category": "Fusils tactiques",
       "name": "Chasseur d\u0027ombres R1",
       "id": 67,
@@ -8522,7 +8522,7 @@
     {
       "game": "COLD_WAR",
       "primary": true,
-      "locked": false,
+      "locked": true,
       "category": "Fusil de prÃ©cision",
       "name": "K31 Suisse",
       "id": 70,
@@ -8531,7 +8531,7 @@
     {
       "game": "MODERN_WARFARE",
       "primary": true,
-      "locked": false,
+      "locked": true,
       "category": "Fusil de prÃ©cision",
       "name": "Rytec AMR",
       "id": 71,
@@ -8549,7 +8549,7 @@
     {
       "game": "COLD_WAR",
       "primary": true,
-      "locked": false,
+      "locked": true,
       "category": "Fusil de prÃ©cision",
       "name": "ZRG 20 mm",
       "id": 73,
@@ -9412,7 +9412,7 @@
     {
       "game": "MODERN_WARFARE",
       "primary": false,
-      "locked": false,
+      "locked": true,
       "category": "Armes de poing",
       "name": "Renetti",
       "id": 1006,
@@ -9448,7 +9448,7 @@
     {
       "game": "MODERN_WARFARE",
       "primary": false,
-      "locked": false,
+      "locked": true,
       "category": "Armes de poing",
       "name": "Sykov",
       "id": 1010,
@@ -9538,7 +9538,7 @@
     {
       "game": "COLD_WAR",
       "primary": false,
-      "locked": false,
+      "locked": true,
       "category": "Corps Ã  corps",
       "name": "Masse",
       "id": 1020,
@@ -9547,7 +9547,7 @@
     {
       "game": "COLD_WAR",
       "primary": false,
-      "locked": false,
+      "locked": true,
       "category": "Corps Ã  corps",
       "name": "Pelle Ã  tranchÃ©e",
       "id": 0,
@@ -9565,7 +9565,7 @@
     {
       "game": "MODERN_WARFARE",
       "primary": false,
-      "locked": false,
+      "locked": true,
       "category": "Corps Ã  corps",
       "name": "BÃ¢tons de Kali",
       "id": 0,
@@ -9583,7 +9583,7 @@
     {
       "game": "MODERN_WARFARE",
       "primary": false,
-      "locked": false,
+      "locked": true,
       "category": "Corps Ã  corps",
       "name": "Double kodachi",
       "id": 1025,
