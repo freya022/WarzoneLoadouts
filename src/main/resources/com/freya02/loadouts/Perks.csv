@@ -1,0 +1,19 @@
+tier;name;isOverkill
+1;Pas de course;false
+1;Démineur;false
+1;Pillard;false
+1;Sang-froid;false
+1;Chaîne d'éliminations;false
+1;Régénération rapide;false
+2;Livraison express;false
+2;Détermination;false
+2;Surarmement;true
+2;Alerte maximale;false
+2;Fantôme;false
+2;Tueur en série;false
+3;Technicien;false
+3;Survolté;false
+3;Shrapnel;false
+3;Endurci au combat;false
+3;Observateur;false
+3;Traqueur;false

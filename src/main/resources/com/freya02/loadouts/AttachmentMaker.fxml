@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<VBox minHeight="500.0" minWidth="600.0" spacing="10.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+   <HBox>
+      <children>
+         <Label fx:id="gameLabel" text="Cold War">
+            <font>
+               <Font name="System Bold" size="18.0" />
+            </font>
+         </Label>
+         <Pane HBox.hgrow="ALWAYS" />
+         <Label fx:id="nameLabel" text="Couteau">
+            <font>
+               <Font size="18.0" />
+            </font>
+         </Label>
+         <Pane HBox.hgrow="ALWAYS" />
+         <Label fx:id="categoryLabel" text="Corps à corps">
+            <font>
+               <Font size="18.0" />
+            </font>
+         </Label>
+      </children>
+   </HBox>
+   <TextArea fx:id="textArea" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" VBox.vgrow="ALWAYS" />
+   <HBox alignment="BOTTOM_RIGHT">
+      <Button fx:id="firstOk" mnemonicParsing="false" onMouseClicked="#onFirstClicked" prefWidth="75.0" text="OK" />
+   </HBox>
+   <VBox>
+      <Label text="Niveaux">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <ScrollPane fitToWidth="true" hbarPolicy="NEVER">
+         <GridPane fx:id="levelsBox" hgap="5.0" vgap="2.0">
+         </GridPane>
+      </ScrollPane>
+   </VBox>
+   <HBox alignment="BOTTOM_RIGHT">
+      <Button fx:id="secondOk" mnemonicParsing="false" onMouseClicked="#onSecondClicked" prefWidth="75.0" text="OK" />
+   </HBox>
+</VBox>
