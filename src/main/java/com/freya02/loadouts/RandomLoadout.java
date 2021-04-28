@@ -1,5 +1,6 @@
 package com.freya02.loadouts;
 
+import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.ThreadLocalRandom;
 
@@ -20,15 +21,26 @@ public class RandomLoadout {
 	}
 
 	public static RandomLoadout fromProfile(Profile profile) {
+		return fromProfile(profile, Game.values());
+	}
+
+	public static RandomLoadout fromProfile(Profile profile, Game... games) {
 		final List<Weapon> weapons = WarzoneLoadouts.getWeapons();
 		final List<Integer> weaponNumbers = Utils.uniqueRandoms(2, 0, weapons.size(), i -> {
 			final Weapon weapon = weapons.get(i);
 
-			return !weapon.isLocked() || profile.getUnlockedWeapons().contains(weapon.getId());
+			return Arrays.asList(games).contains(weapon.getGame()) && (!weapon.isLocked() || profile.getUnlockedWeapons().contains(weapon.getId()));
 		});
 
 		Weapon primary = weapons.get(weaponNumbers.get(0));
 		Weapon secondary = weapons.get(weaponNumbers.get(1));
+
+		//If secondary is AR but primary is pistol, swap
+		if (secondary.isPrimary() && !primary.isPrimary()) {
+			Weapon tmp = primary;
+			secondary = primary;
+			primary = tmp;
+		}
 
 		final Perks perks = WarzoneLoadouts.getPerks();
 		final Perk firstPerk = getRandomItem(perks.getFirstPerks());
@@ -43,12 +55,6 @@ public class RandomLoadout {
 
 	private static <T> T getRandomItem(List<T> list) {
 		return list.get(ThreadLocalRandom.current().nextInt(list.size()));
-	}
-
-	public static void main(String[] args) {
-		final RandomLoadout loadout = fromProfile(new Profile("Lol"));
-
-		System.out.println();
 	}
 
 	public ChoosedWeapon getPrimary() {
