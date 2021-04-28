@@ -20,7 +20,7 @@ public class ChoosedWeapon {
 			final AttachmentCategory attachmentCategory = attachmentCategories.get(attachmentNumber);
 
 			final int i = ThreadLocalRandom.current().nextInt(getUnlockedAttachmentCount(weapon, profile, attachmentCategory));
-			choosedAttachments.add(new ChoosedAttachment(attachmentCategory.getName(), attachmentCategory.getAttachments().get(i).getName()));
+			choosedAttachments.add(new ChoosedAttachment(attachmentCategory.getName(), attachmentCategory.getAttachments().get(i).getName(), attachmentCategory.getAttachments().get(i)));
 		}
 	}
 
