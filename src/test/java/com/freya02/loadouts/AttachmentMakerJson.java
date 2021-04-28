@@ -1,6 +1,7 @@
 package com.freya02.loadouts;
 
 import com.freya02.gson.GsonUtils;
+import com.google.gson.GsonBuilder;
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVParser;
 import org.apache.commons.csv.CSVRecord;
@@ -92,7 +93,7 @@ public class AttachmentMakerJson {
 		readWeapons("Primaries.csv", true);
 		readWeapons("Secondaries.csv", false);
 
-		GsonUtils.saveGson(path, weapons);
+		GsonUtils.saveGson(path, weapons, GsonBuilder::disableHtmlEscaping);
 	}
 
 	private static void readWeapons(String inputFile, boolean isPrimary) throws IOException {

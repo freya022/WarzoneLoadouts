@@ -4,7 +4,7 @@
       "game": "COLD_WAR",
       "primary": true,
       "locked": false,
-      "category": "Fusils d\u0027assaut",
+      "category": "Fusils d'assaut",
       "name": "QBZ-83",
       "id": 1,
       "attachmentCategories": [
@@ -44,7 +44,7 @@
               "requiredLevel": 37
             },
             {
-              "name": "Royal \u0026 Kross 4X",
+              "name": "Royal & Kross 4X",
               "requiredLevel": 42
             },
             {
@@ -270,7 +270,7 @@
       "game": "COLD_WAR",
       "primary": true,
       "locked": false,
-      "category": "Fusils d\u0027assaut",
+      "category": "Fusils d'assaut",
       "name": "Krig 6",
       "id": 2,
       "attachmentCategories": [
@@ -310,7 +310,7 @@
               "requiredLevel": 37
             },
             {
-              "name": "Royal \u0026 Kross 4X",
+              "name": "Royal & Kross 4X",
               "requiredLevel": 42
             },
             {
@@ -536,7 +536,7 @@
       "game": "COLD_WAR",
       "primary": true,
       "locked": false,
-      "category": "Fusils d\u0027assaut",
+      "category": "Fusils d'assaut",
       "name": "Groza",
       "id": 3,
       "attachmentCategories": [
@@ -576,7 +576,7 @@
               "requiredLevel": 37
             },
             {
-              "name": "Royal \u0026 Kross 4X",
+              "name": "Royal & Kross 4X",
               "requiredLevel": 42
             },
             {
@@ -802,7 +802,7 @@
       "game": "COLD_WAR",
       "primary": true,
       "locked": false,
-      "category": "Fusils d\u0027assaut",
+      "category": "Fusils d'assaut",
       "name": "FFAR 1",
       "id": 4,
       "attachmentCategories": [
@@ -842,7 +842,7 @@
               "requiredLevel": 37
             },
             {
-              "name": "Royal \u0026 Kross 4X",
+              "name": "Royal & Kross 4X",
               "requiredLevel": 42
             },
             {
@@ -1068,7 +1068,7 @@
       "game": "COLD_WAR",
       "primary": true,
       "locked": false,
-      "category": "Fusils d\u0027assaut",
+      "category": "Fusils d'assaut",
       "name": "AK-47",
       "id": 12,
       "attachmentCategories": [
@@ -1108,7 +1108,7 @@
               "requiredLevel": 37
             },
             {
-              "name": "Royal \u0026 Kross 4X",
+              "name": "Royal & Kross 4X",
               "requiredLevel": 42
             },
             {
@@ -1334,7 +1334,7 @@
       "game": "COLD_WAR",
       "primary": true,
       "locked": false,
-      "category": "Fusils d\u0027assaut",
+      "category": "Fusils d'assaut",
       "name": "FARA 83",
       "id": 6,
       "attachmentCategories": [
@@ -1374,7 +1374,7 @@
               "requiredLevel": 37
             },
             {
-              "name": "Royal \u0026 Kross 4X",
+              "name": "Royal & Kross 4X",
               "requiredLevel": 42
             },
             {
@@ -1600,7 +1600,7 @@
       "game": "COLD_WAR",
       "primary": true,
       "locked": false,
-      "category": "Fusils d\u0027assaut",
+      "category": "Fusils d'assaut",
       "name": "XM4",
       "id": 7,
       "attachmentCategories": [
@@ -1640,7 +1640,7 @@
               "requiredLevel": 37
             },
             {
-              "name": "Royal \u0026 Kross 4X",
+              "name": "Royal & Kross 4X",
               "requiredLevel": 42
             },
             {
@@ -1866,7 +1866,7 @@
       "game": "MODERN_WARFARE",
       "primary": true,
       "locked": true,
-      "category": "Fusils d\u0027assaut",
+      "category": "Fusils d'assaut",
       "name": "Grau 5.56",
       "id": 8,
       "attachmentCategories": [
@@ -2162,7 +2162,7 @@
               "requiredLevel": 42
             },
             {
-              "name": "Mo\u0027 Money",
+              "name": "Mo' Money",
               "requiredLevel": 45
             },
             {
@@ -2185,7 +2185,7 @@
       "game": "MODERN_WARFARE",
       "primary": true,
       "locked": false,
-      "category": "Fusils d\u0027assaut",
+      "category": "Fusils d'assaut",
       "name": "Kilo 141",
       "id": 9,
       "attachmentCategories": [
@@ -2477,7 +2477,7 @@
               "requiredLevel": 16
             },
             {
-              "name": "Mo\u0027 Money ",
+              "name": "Mo' Money ",
               "requiredLevel": 27
             },
             {
@@ -2512,7 +2512,7 @@
       "game": "MODERN_WARFARE",
       "primary": true,
       "locked": true,
-      "category": "Fusils d\u0027assaut",
+      "category": "Fusils d'assaut",
       "name": "AN-94",
       "id": 10,
       "attachmentCategories": [
@@ -2800,7 +2800,7 @@
               "requiredLevel": 18
             },
             {
-              "name": "Mo\u0027 Money",
+              "name": "Mo' Money",
               "requiredLevel": 21
             },
             {
@@ -2835,7 +2835,7 @@
       "game": "MODERN_WARFARE",
       "primary": true,
       "locked": false,
-      "category": "Fusils d\u0027assaut",
+      "category": "Fusils d'assaut",
       "name": "FAL",
       "id": 11,
       "attachmentCategories": [
@@ -3139,7 +3139,7 @@
               "requiredLevel": 52
             },
             {
-              "name": "Mo\u0027 Money",
+              "name": "Mo' Money",
               "requiredLevel": 56
             },
             {
@@ -3154,7 +3154,7 @@
       "game": "MODERN_WARFARE",
       "primary": true,
       "locked": false,
-      "category": "Fusils d\u0027assaut",
+      "category": "Fusils d'assaut",
       "name": "AK-47",
       "id": 0,
       "attachmentCategories": [
@@ -3450,7 +3450,7 @@
               "requiredLevel": 30
             },
             {
-              "name": "Mo\u0027 Money",
+              "name": "Mo' Money",
               "requiredLevel": 35
             },
             {
@@ -3477,7 +3477,7 @@
       "game": "MODERN_WARFARE",
       "primary": true,
       "locked": false,
-      "category": "Fusils d\u0027assaut",
+      "category": "Fusils d'assaut",
       "name": "M4A1",
       "id": 13,
       "attachmentCategories": [
@@ -3789,7 +3789,7 @@
               "requiredLevel": 42
             },
             {
-              "name": "Mo\u0027 Money",
+              "name": "Mo' Money",
               "requiredLevel": 45
             },
             {
@@ -3812,7 +3812,7 @@
       "game": "MODERN_WARFARE",
       "primary": true,
       "locked": false,
-      "category": "Fusils d\u0027assaut",
+      "category": "Fusils d'assaut",
       "name": "FR 5.56",
       "id": 14,
       "attachmentCategories": []
@@ -3821,7 +3821,7 @@
       "game": "MODERN_WARFARE",
       "primary": true,
       "locked": true,
-      "category": "Fusils d\u0027assaut",
+      "category": "Fusils d'assaut",
       "name": "CR-56 AMAX",
       "id": 15,
       "attachmentCategories": []
@@ -3830,7 +3830,7 @@
       "game": "MODERN_WARFARE",
       "primary": true,
       "locked": false,
-      "category": "Fusils d\u0027assaut",
+      "category": "Fusils d'assaut",
       "name": "FN Scar 17",
       "id": 16,
       "attachmentCategories": []
@@ -3839,7 +3839,7 @@
       "game": "MODERN_WARFARE",
       "primary": true,
       "locked": true,
-      "category": "Fusils d\u0027assaut",
+      "category": "Fusils d'assaut",
       "name": "AS VAL",
       "id": 17,
       "attachmentCategories": []
@@ -3848,7 +3848,7 @@
       "game": "MODERN_WARFARE",
       "primary": true,
       "locked": false,
-      "category": "Fusils d\u0027assaut",
+      "category": "Fusils d'assaut",
       "name": "M13",
       "id": 18,
       "attachmentCategories": []
@@ -3857,7 +3857,7 @@
       "game": "MODERN_WARFARE",
       "primary": true,
       "locked": false,
-      "category": "Fusils d\u0027assaut",
+      "category": "Fusils d'assaut",
       "name": "Oden",
       "id": 19,
       "attachmentCategories": []
@@ -3866,7 +3866,7 @@
       "game": "MODERN_WARFARE",
       "primary": true,
       "locked": true,
-      "category": "Fusils d\u0027assaut",
+      "category": "Fusils d'assaut",
       "name": "RAM-7",
       "id": 20,
       "attachmentCategories": []
@@ -5827,7 +5827,7 @@
       "game": "COLD_WAR",
       "primary": true,
       "locked": false,
-      "category": "Fusils Ã  pompe",
+      "category": "Fusils à pompe",
       "name": "Gallo SA12",
       "id": 38,
       "attachmentCategories": [
@@ -6012,7 +6012,7 @@
       "game": "MODERN_WARFARE",
       "primary": true,
       "locked": false,
-      "category": "Fusils Ã  pompe",
+      "category": "Fusils à pompe",
       "name": "Model 680",
       "id": 39,
       "attachmentCategories": []
@@ -6021,7 +6021,7 @@
       "game": "MODERN_WARFARE",
       "primary": true,
       "locked": true,
-      "category": "Fusils Ã  pompe",
+      "category": "Fusils à pompe",
       "name": "JAK-12",
       "id": 40,
       "attachmentCategories": []
@@ -6030,7 +6030,7 @@
       "game": "MODERN_WARFARE",
       "primary": true,
       "locked": false,
-      "category": "Fusils Ã  pompe",
+      "category": "Fusils à pompe",
       "name": "725",
       "id": 41,
       "attachmentCategories": []
@@ -6039,7 +6039,7 @@
       "game": "MODERN_WARFARE",
       "primary": true,
       "locked": false,
-      "category": "Fusils Ã  pompe",
+      "category": "Fusils à pompe",
       "name": "Origin 12",
       "id": 42,
       "attachmentCategories": []
@@ -6048,7 +6048,7 @@
       "game": "COLD_WAR",
       "primary": true,
       "locked": false,
-      "category": "Fusils Ã  pompe",
+      "category": "Fusils à pompe",
       "name": "Balayeuse",
       "id": 43,
       "attachmentCategories": []
@@ -6057,8 +6057,8 @@
       "game": "MODERN_WARFARE",
       "primary": true,
       "locked": false,
-      "category": "Fusils Ã  pompe",
-      "name": "Fusil Ã  pompe R9-0",
+      "category": "Fusils à pompe",
+      "name": "Fusil à pompe R9-0",
       "id": 0,
       "attachmentCategories": []
     },
@@ -6066,7 +6066,7 @@
       "game": "COLD_WAR",
       "primary": true,
       "locked": false,
-      "category": "Fusils Ã  pompe",
+      "category": "Fusils à pompe",
       "name": "Hauer 77",
       "id": 45,
       "attachmentCategories": [
@@ -6251,7 +6251,7 @@
       "game": "MODERN_WARFARE",
       "primary": true,
       "locked": true,
-      "category": "Fusils Ã  pompe",
+      "category": "Fusils à pompe",
       "name": "VLK Rogue",
       "id": 46,
       "attachmentCategories": []
@@ -6288,7 +6288,7 @@
               "requiredLevel": 22
             },
             {
-              "name": "Royal \u0026 Kross 4X",
+              "name": "Royal & Kross 4X",
               "requiredLevel": 27
             },
             {
@@ -6599,7 +6599,7 @@
               "requiredLevel": 22
             },
             {
-              "name": "Royal \u0026 Kross 4X",
+              "name": "Royal & Kross 4X",
               "requiredLevel": 27
             },
             {
@@ -6874,7 +6874,7 @@
               "requiredLevel": 22
             },
             {
-              "name": "Royal \u0026 Kross 4X",
+              "name": "Royal & Kross 4X",
               "requiredLevel": 27
             },
             {
@@ -7145,7 +7145,7 @@
               "requiredLevel": 17
             },
             {
-              "name": "Royal \u0026 Kross 4X",
+              "name": "Royal & Kross 4X",
               "requiredLevel": 22
             },
             {
@@ -7411,7 +7411,7 @@
               "requiredLevel": 17
             },
             {
-              "name": "Royal \u0026 Kross 4X",
+              "name": "Royal & Kross 4X",
               "requiredLevel": 22
             },
             {
@@ -7677,7 +7677,7 @@
               "requiredLevel": 17
             },
             {
-              "name": "Royal \u0026 Kross 4X",
+              "name": "Royal & Kross 4X",
               "requiredLevel": 22
             },
             {
@@ -7943,7 +7943,7 @@
               "requiredLevel": 17
             },
             {
-              "name": "Royal \u0026 Kross 4X",
+              "name": "Royal & Kross 4X",
               "requiredLevel": 22
             },
             {
@@ -8240,7 +8240,7 @@
       "primary": true,
       "locked": true,
       "category": "Fusils tactiques",
-      "name": "Chasseur d\u0027ombres R1",
+      "name": "Chasseur d'ombres R1",
       "id": 67,
       "attachmentCategories": []
     },
@@ -8248,7 +8248,7 @@
       "game": "COLD_WAR",
       "primary": true,
       "locked": false,
-      "category": "Fusil de prÃ©cision",
+      "category": "Fusil de précision",
       "name": "Pelington 703",
       "id": 68,
       "attachmentCategories": [
@@ -8276,7 +8276,7 @@
               "requiredLevel": 22
             },
             {
-              "name": "Royal \u0026 Kross 4X",
+              "name": "Royal & Kross 4X",
               "requiredLevel": 27
             },
             {
@@ -8514,7 +8514,7 @@
       "game": "COLD_WAR",
       "primary": true,
       "locked": false,
-      "category": "Fusil de prÃ©cision",
+      "category": "Fusil de précision",
       "name": "M82",
       "id": 69,
       "attachmentCategories": []
@@ -8523,7 +8523,7 @@
       "game": "COLD_WAR",
       "primary": true,
       "locked": true,
-      "category": "Fusil de prÃ©cision",
+      "category": "Fusil de précision",
       "name": "K31 Suisse",
       "id": 70,
       "attachmentCategories": []
@@ -8532,7 +8532,7 @@
       "game": "MODERN_WARFARE",
       "primary": true,
       "locked": true,
-      "category": "Fusil de prÃ©cision",
+      "category": "Fusil de précision",
       "name": "Rytec AMR",
       "id": 71,
       "attachmentCategories": []
@@ -8541,7 +8541,7 @@
       "game": "MODERN_WARFARE",
       "primary": true,
       "locked": false,
-      "category": "Fusil de prÃ©cision",
+      "category": "Fusil de précision",
       "name": "HDR",
       "id": 72,
       "attachmentCategories": []
@@ -8550,7 +8550,7 @@
       "game": "COLD_WAR",
       "primary": true,
       "locked": true,
-      "category": "Fusil de prÃ©cision",
+      "category": "Fusil de précision",
       "name": "ZRG 20 mm",
       "id": 73,
       "attachmentCategories": []
@@ -8559,7 +8559,7 @@
       "game": "MODERN_WARFARE",
       "primary": true,
       "locked": false,
-      "category": "Fusil de prÃ©cision",
+      "category": "Fusil de précision",
       "name": "AX-50",
       "id": 74,
       "attachmentCategories": []
@@ -8568,7 +8568,7 @@
       "game": "COLD_WAR",
       "primary": true,
       "locked": false,
-      "category": "Fusil de prÃ©cision",
+      "category": "Fusil de précision",
       "name": "LW3 - Tundra",
       "id": 75,
       "attachmentCategories": [
@@ -8596,7 +8596,7 @@
               "requiredLevel": 22
             },
             {
-              "name": "Royal \u0026 Kross 4X",
+              "name": "Royal & Kross 4X",
               "requiredLevel": 27
             },
             {
@@ -8834,7 +8834,7 @@
       "game": "MODERN_WARFARE",
       "primary": true,
       "locked": false,
-      "category": "Fusil de prÃ©cision",
+      "category": "Fusil de précision",
       "name": "Dragunov",
       "id": 76,
       "attachmentCategories": []
@@ -8843,8 +8843,8 @@
       "game": "MODERN_WARFARE",
       "primary": true,
       "locked": false,
-      "category": "Corps Ã  corps",
-      "name": "Bouclier antiÃ©meute",
+      "category": "Corps à corps",
+      "name": "Bouclier antiémeute",
       "id": 0,
       "attachmentCategories": []
     },
@@ -9521,7 +9521,7 @@
       "game": "COLD_WAR",
       "primary": false,
       "locked": false,
-      "category": "Corps Ã  corps",
+      "category": "Corps à corps",
       "name": "Wakizashi",
       "id": 1018,
       "attachmentCategories": []
@@ -9530,7 +9530,7 @@
       "game": "COLD_WAR",
       "primary": false,
       "locked": false,
-      "category": "Corps Ã  corps",
+      "category": "Corps à corps",
       "name": "Machette",
       "id": 1019,
       "attachmentCategories": []
@@ -9539,7 +9539,7 @@
       "game": "COLD_WAR",
       "primary": false,
       "locked": true,
-      "category": "Corps Ã  corps",
+      "category": "Corps à corps",
       "name": "Masse",
       "id": 1020,
       "attachmentCategories": []
@@ -9548,8 +9548,8 @@
       "game": "COLD_WAR",
       "primary": false,
       "locked": true,
-      "category": "Corps Ã  corps",
-      "name": "Pelle Ã  tranchÃ©e",
+      "category": "Corps à corps",
+      "name": "Pelle à tranchée",
       "id": 0,
       "attachmentCategories": []
     },
@@ -9557,7 +9557,7 @@
       "game": "MODERN_WARFARE",
       "primary": false,
       "locked": false,
-      "category": "Corps Ã  corps",
+      "category": "Corps à corps",
       "name": "Couteau de combat",
       "id": 1022,
       "attachmentCategories": []
@@ -9566,8 +9566,8 @@
       "game": "MODERN_WARFARE",
       "primary": false,
       "locked": true,
-      "category": "Corps Ã  corps",
-      "name": "BÃ¢tons de Kali",
+      "category": "Corps à corps",
+      "name": "Bâtons de Kali",
       "id": 0,
       "attachmentCategories": []
     },
@@ -9575,7 +9575,7 @@
       "game": "COLD_WAR",
       "primary": false,
       "locked": false,
-      "category": "Corps Ã  corps",
+      "category": "Corps à corps",
       "name": "Couteau",
       "id": 1024,
       "attachmentCategories": []
@@ -9584,7 +9584,7 @@
       "game": "MODERN_WARFARE",
       "primary": false,
       "locked": true,
-      "category": "Corps Ã  corps",
+      "category": "Corps à corps",
       "name": "Double kodachi",
       "id": 1025,
       "attachmentCategories": []
