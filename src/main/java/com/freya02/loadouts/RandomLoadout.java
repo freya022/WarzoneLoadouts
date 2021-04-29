@@ -27,21 +27,9 @@ public class RandomLoadout {
 
 	public static RandomLoadout fromProfile(Profile profile, Game... games) {
 		final List<Weapon> weapons = WarzoneLoadouts.getWeapons();
-		final List<Integer> weaponNumbers = Utils.uniqueRandoms(2, 0, weapons.size(), i -> {
-			final Weapon weapon = weapons.get(i);
 
-			return Arrays.asList(games).contains(weapon.getGame()) && (!weapon.isLocked() || profile.getUnlockedWeapons().contains(weapon.getId()));
-		});
-
-		Weapon primary = weapons.get(weaponNumbers.get(0));
-		Weapon secondary = weapons.get(weaponNumbers.get(1));
-
-		//If secondary is AR but primary is pistol, swap
-		if (secondary.isPrimary() && !primary.isPrimary()) {
-			Weapon tmp = primary;
-			secondary = primary;
-			primary = tmp;
-		}
+		Weapon primary = getRandomItem(weapons.stream().filter(Weapon::isPrimary).filter(w -> canTakeWeapon(profile, w, games)).collect(Collectors.toList()));
+		Weapon secondary = getRandomItem(weapons.stream().filter(w -> w != primary && canTakeWeapon(profile, w, games)).collect(Collectors.toList()));
 
 		final Perks perks = WarzoneLoadouts.getPerks();
 		final Perk firstPerk = getRandomItem(perks.getFirstPerks());
@@ -52,6 +40,10 @@ public class RandomLoadout {
 		final Lethal lethal = getRandomItem(WarzoneLoadouts.getLethals());
 
 		return new RandomLoadout(new ChoosedWeapon(primary, profile), new ChoosedWeapon(secondary, profile), firstPerk, secondPerk, thirdPerk, tactical, lethal);
+	}
+
+	private static boolean canTakeWeapon(Profile profile, Weapon weapon, Game[] games) {
+		return Arrays.asList(games).contains(weapon.getGame()) && (!weapon.isLocked() || profile.getUnlockedWeapons().contains(weapon.getId()));
 	}
 
 	private static <T> T getRandomItem(List<T> list) {
