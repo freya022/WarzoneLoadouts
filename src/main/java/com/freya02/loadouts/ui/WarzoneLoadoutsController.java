@@ -58,6 +58,9 @@ public class WarzoneLoadoutsController extends LazyWindow {
 
 	private void showUnlockedWeapon(Weapon weapon) {
 		try (InputStream stream = WarzoneLoadoutsController.class.getResourceAsStream("delete.svg")) {
+			final HBox box = new HBox();
+			box.getStyleClass().add("unlockedWeapon");
+
 			final Label label = new Label(weapon.getCategory() + " - " + weapon.getName());
 			final Pane pane = new Pane();
 			HBox.setHgrow(pane, Priority.ALWAYS);
@@ -66,10 +69,11 @@ public class WarzoneLoadoutsController extends LazyWindow {
 			stackPane.setOnMouseClicked(e -> {
 				profile.lockWeapon(weapon);
 				WarzoneLoadouts.getProfiles().save();
+
+				unlockedBox.getChildren().remove(box);
 			});
 
-			final HBox box = new HBox(label, pane, stackPane);
-			box.getStyleClass().add("unlockedWeapon");
+			box.getChildren().addAll(label, pane, stackPane);
 
 			unlockedBox.getChildren().add(box);
 		} catch (IOException e) {
