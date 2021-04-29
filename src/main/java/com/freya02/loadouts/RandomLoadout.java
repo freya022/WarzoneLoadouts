@@ -3,6 +3,7 @@ package com.freya02.loadouts;
 import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.ThreadLocalRandom;
+import java.util.stream.Collectors;
 
 public class RandomLoadout {
 	private final ChoosedWeapon primary, secondary;
@@ -44,7 +45,7 @@ public class RandomLoadout {
 
 		final Perks perks = WarzoneLoadouts.getPerks();
 		final Perk firstPerk = getRandomItem(perks.getFirstPerks());
-		final Perk secondPerk = secondary.isPrimary() ? perks.getSecondPerks().stream().filter(Perk::isOverkill).findFirst().orElseThrow() : getRandomItem(perks.getSecondPerks());
+		final Perk secondPerk = secondary.isPrimary() ? perks.getSecondPerks().stream().filter(Perk::isOverkill).findFirst().orElseThrow() : getRandomItem(perks.getSecondPerks().stream().filter(perk -> !perk.isOverkill()).collect(Collectors.toList()));
 		final Perk thirdPerk = getRandomItem(WarzoneLoadouts.getPerks().getThirdPerks());
 
 		final Tactical tactical = getRandomItem(WarzoneLoadouts.getTacticals());
