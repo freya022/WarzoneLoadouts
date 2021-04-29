@@ -9520,7 +9520,7 @@
     {
       "game": "COLD_WAR",
       "primary": false,
-      "locked": false,
+      "locked": true,
       "category": "Corps à corps",
       "name": "Wakizashi",
       "id": 1018,
