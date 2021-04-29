@@ -19,8 +19,8 @@ public class ChoosedWeapon {
 		for (Integer attachmentNumber : attachmentNumbers) {
 			final AttachmentCategory attachmentCategory = attachmentCategories.get(attachmentNumber);
 
-			final int i = ThreadLocalRandom.current().nextInt(getUnlockedAttachmentCount(weapon, profile, attachmentCategory));
-			choosedAttachments.add(new ChoosedAttachment(attachmentCategory.getName(), attachmentCategory.getAttachments().get(i).getName(), attachmentCategory.getAttachments().get(i)));
+			final Attachment attachment = getRandomAttachment(weapon, profile, attachmentCategory);
+			choosedAttachments.add(new ChoosedAttachment(attachmentCategory.getName(), attachment.getName(), attachment));
 		}
 	}
 
@@ -34,6 +34,12 @@ public class ChoosedWeapon {
 
 	private int getUnlockedAttachmentCount(Weapon weapon, Profile profile, AttachmentCategory attachmentCategory) {
 		return (int) attachmentCategory.getAttachments().stream().filter(a -> a.isUnlockedFor(weapon, profile)).count();
+	}
+
+	private Attachment getRandomAttachment(Weapon weapon, Profile profile, AttachmentCategory attachmentCategory) {
+		final List<Attachment> availableAttachments = attachmentCategory.getAttachments().stream().filter(a -> a.isUnlockedFor(weapon, profile)).toList();
+		final int index = ThreadLocalRandom.current().nextInt(availableAttachments.size());
+		return availableAttachments.get(index);
 	}
 
 	@Override
