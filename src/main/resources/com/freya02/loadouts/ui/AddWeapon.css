@@ -1,0 +1,56 @@
+Label, JFXButton, JFXComboBox .text {
+    -fx-text-fill: white;
+    -fx-fill: white;
+}
+
+ChoiceBox {
+    -fx-background-color: rgb(35, 35, 35);
+    -fx-border-color: rgb(225, 225, 225);
+}
+
+.label {
+    -fx-text-fill: #e1e1e1;
+}
+
+ChoiceBox:hover {
+    -fx-background-color: rgba(225, 225, 225, 0.1);
+}
+
+.arrow {
+    -fx-background-color: rgb(225, 225, 225);
+    -fx-border-color: rgb(225, 225, 225);
+}
+
+.context-menu {
+    -fx-background-color: rgba(50, 50, 50, 0.5);
+    -fx-border-color: rgba(255, 255, 255, 0.5);
+}
+
+Label {
+    -fx-font-size: 16px;
+}
+
+ChoiceBox .label {
+    -fx-font-size: 14px;
+}
+
+#newClassButton {
+    -fx-border-color: rgb(225, 225, 225);
+}
+
+#title {
+    -fx-font-size: 20px;
+}
+
+#pane {
+    -fx-background-color: rgb(25, 25, 25);
+}
+
+JFXButton {
+    -fx-border-color: rgb(225, 225, 225);
+}
+
+JFXButton:hover {
+    -fx-background-color: rgba(75, 75, 75, 0.5);
+    -fx-cursor: hand;
+}

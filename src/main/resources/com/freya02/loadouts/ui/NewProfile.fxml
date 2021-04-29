@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<VBox id="mainBox" alignment="TOP_CENTER" stylesheets="@NewProfile.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label id="title" text="Nouveau Profil Warzone" />
+      <GridPane hgap="5.0" vgap="5.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="ALWAYS" />
+          <ColumnConstraints hgrow="ALWAYS" />
+            <ColumnConstraints hgrow="ALWAYS" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Nom" />
+            <TextField fx:id="nameField" promptText="Nom" style="-fx-background-color: transparent; -fx-border-color: rgb(225, 225, 225);" GridPane.columnIndex="1" />
+            <Label text="Image" GridPane.rowIndex="1" />
+            <TextField fx:id="pictureField" promptText="Nom" style="-fx-background-color: transparent; -fx-border-color: rgb(225, 225, 225);" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <JFXButton onMouseClicked="#onSelectClicked" prefWidth="85.0" text="Sélectionner" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+      <VBox alignment="TOP_RIGHT">
+         <children>
+            <JFXButton fx:id="createButton" onMouseClicked="#onCreateClicked" prefWidth="85.0" text="OK" />
+         </children>
+      </VBox>
+   </children>
+</VBox>
