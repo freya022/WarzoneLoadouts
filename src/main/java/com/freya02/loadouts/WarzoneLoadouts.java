@@ -1,14 +1,15 @@
 package com.freya02.loadouts;
 
 import com.freya02.gson.GsonUtils;
-import com.freya02.io.NativeUtils;
 import com.freya02.ui.UILib;
+import com.google.gson.Gson;
 
+import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
+import java.net.URL;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.util.Arrays;
 import java.util.List;
 
 import static java.nio.file.StandardOpenOption.CREATE;
@@ -22,7 +23,7 @@ public class WarzoneLoadouts {
 
 	private static final Profiles profiles;
 
-	private static final Weapons weapons;
+	private static Weapons weapons;
 	private static final Perks perks = new Perks();
 	private static final Tacticals tacticals = new Tacticals();
 	private static final Lethals lethals = new Lethals();
@@ -31,20 +32,38 @@ public class WarzoneLoadouts {
 		try {
 			Files.createDirectories(APP_FOLDER);
 
-			final byte[] bytes;
-			try (InputStream stream = WarzoneLoadouts.class.getResourceAsStream("Weapons.json")) {
-				bytes = stream.readAllBytes();
+			if (Files.notExists(WEAPONS_PATH)) {
+				downloadWeapons();
 			}
 
-			if (Files.notExists(WEAPONS_PATH) || !Arrays.equals(NativeUtils.getFileHashBytes(WEAPONS_PATH.toString()), NativeUtils.getBytesHashBytes(bytes))) {
-				Files.write(WEAPONS_PATH, bytes, CREATE, TRUNCATE_EXISTING);
-			}
-			weapons = GsonUtils.loadGson(WEAPONS_PATH, Weapons.class);
+			loadWeapons(1);
+
 			profiles = GsonUtils.loadGson(PROFILES_PATH, Profiles.class);
 		} catch (IOException e) {
 			UILib.displayError(e);
 			System.exit(-2);
 			throw new AssertionError();
+		}
+	}
+
+	private static void loadWeapons(int n) throws IOException {
+		try (final BufferedReader br = Files.newBufferedReader(WEAPONS_PATH)) {
+			weapons = new Gson().fromJson(br, Weapons.class);
+		} catch (Exception e) {
+			if (n == 2) {
+				UILib.displayError(e);
+				System.exit(-9);
+				throw new AssertionError();
+			}
+
+			downloadWeapons();
+			loadWeapons(n + 1);
+		}
+	}
+
+	private static void downloadWeapons() throws IOException {
+		try (InputStream stream = new URL("https://raw.githubusercontent.com/freya022/WarzoneLoadouts/master/data/Weapons.json").openStream()) {
+			Files.write(WEAPONS_PATH, stream.readAllBytes(), CREATE, TRUNCATE_EXISTING);
 		}
 	}
 

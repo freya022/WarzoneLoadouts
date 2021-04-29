@@ -159,8 +159,9 @@ public class Utils {
 	}
 
 	public static List<CSVRecord> loadCsv(String inputFile) {
-		try (CSVParser csvParser = new CSVParser(new InputStreamReader(Utils.class.getResourceAsStream(inputFile)), CSVFormat.EXCEL.withDelimiter(';').withFirstRecordAsHeader())) {
+		try (CSVParser csvParser = new CSVParser(new InputStreamReader(new URL("https://raw.githubusercontent.com/freya022/WarzoneLoadouts/master/data/" + inputFile).openStream()), CSVFormat.EXCEL.withDelimiter(';').withFirstRecordAsHeader())) {
 			return csvParser.getRecords();
+
 		} catch (IOException e) {
 			throw new RuntimeException(e);
 		}
