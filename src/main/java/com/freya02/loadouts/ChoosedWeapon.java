@@ -14,7 +14,7 @@ public class ChoosedWeapon {
 
 		//Choose 5 categories
 		final List<AttachmentCategory> attachmentCategories = weapon.getAttachmentCategories().stream().filter(a -> getUnlockedAttachmentCount(weapon, profile, a) > 0).collect(Collectors.toList());
-		final List<Integer> attachmentNumbers = Utils.uniqueRandoms(5, 0, attachmentCategories.size());
+		final List<Integer> attachmentNumbers = Utils.uniqueRandoms(Math.min(5, attachmentCategories.size()), 0, attachmentCategories.size());
 
 		for (Integer attachmentNumber : attachmentNumbers) {
 			final AttachmentCategory attachmentCategory = attachmentCategories.get(attachmentNumber);
