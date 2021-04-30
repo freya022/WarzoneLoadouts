@@ -6,6 +6,8 @@ import com.freya02.ui.UILib;
 
 public class Main {
 	public static void main(String[] args) {
+		WarzoneLoadouts.loadAll();
+
 		UILib.runAndWait(() -> {
 			final Profile profile = ProfilesController.selectProfile();
 

@@ -1,6 +1,8 @@
 package com.freya02.loadouts;
 
 import com.freya02.gson.GsonUtils;
+import com.freya02.io.IOOperation;
+import com.freya02.loadouts.ui.LoadingController;
 import com.freya02.ui.UILib;
 import com.google.gson.Gson;
 
@@ -15,64 +17,83 @@ import java.util.List;
 import static java.nio.file.StandardOpenOption.CREATE;
 import static java.nio.file.StandardOpenOption.TRUNCATE_EXISTING;
 
-public class WarzoneLoadouts {
+public class WarzoneLoadouts extends IOOperation {
 	public static final Path APP_FOLDER = Path.of(System.getenv("appdata"), "WarzoneLoadouts");
 
 	public static final Path WEAPONS_PATH = APP_FOLDER.resolve("Weapons.json");
 	public static final Path PROFILES_PATH = APP_FOLDER.resolve("Profiles.json");
 
-	private static final Profiles profiles;
+	private static WarzoneLoadouts instance;
 
-	private static Weapons weapons;
-	private static final Perks perks = new Perks();
-	private static final Tacticals tacticals = new Tacticals();
-	private static final Lethals lethals = new Lethals();
+	private final Profiles profiles;
 
-	static {
+	private final Weapons weapons;
+	private final Perks perks = new Perks();
+	private final Tacticals tacticals = new Tacticals();
+	private final Lethals lethals = new Lethals();
+
+	private WarzoneLoadouts() throws Exception {
+		final LoadingController controller = UILib.runAndWait(() -> new LoadingController(WarzoneLoadouts.this));
+
+		setState("Chargement...");
+		Files.createDirectories(APP_FOLDER);
+
+		if (Files.notExists(WEAPONS_PATH)) {
+			downloadWeapons();
+		}
+
+		weapons = loadWeapons(1);
+
+		setState("Chargement des profils...");
+		profiles = GsonUtils.loadGson(PROFILES_PATH, Profiles.class);
+
+		UILib.runAndWait(() -> controller.getWindow().close());
+	}
+
+	public static WarzoneLoadouts getInstance() {
+		if (instance == null) {
+			loadAll();
+		}
+
+		return instance;
+	}
+
+	public static void loadAll() {
 		try {
-			Files.createDirectories(APP_FOLDER);
-
-			if (Files.notExists(WEAPONS_PATH)) {
-				downloadWeapons();
-			}
-
-			loadWeapons(1);
-
-			profiles = GsonUtils.loadGson(PROFILES_PATH, Profiles.class);
-		} catch (IOException e) {
+			instance = new WarzoneLoadouts();
+		} catch (Exception e) {
 			UILib.displayError(e);
-			System.exit(-2);
-			throw new AssertionError();
+			System.exit(-7);
 		}
 	}
 
-	private static void loadWeapons(int n) throws IOException {
+	private Weapons loadWeapons(int n) throws Exception {
+		setState("Chargement des armes...");
 		try (final BufferedReader br = Files.newBufferedReader(WEAPONS_PATH)) {
-			weapons = new Gson().fromJson(br, Weapons.class);
+			return new Gson().fromJson(br, Weapons.class);
 		} catch (Exception e) {
 			if (n == 2) {
-				UILib.displayError(e);
-				System.exit(-9);
-				throw new AssertionError();
+				throw e;
 			}
 
 			downloadWeapons();
-			loadWeapons(n + 1);
+			return loadWeapons(n + 1);
 		}
 	}
 
-	private static void downloadWeapons() throws IOException {
+	private void downloadWeapons() throws IOException {
+		setState("Téléchargement des armes...");
 		try (InputStream stream = new URL("https://raw.githubusercontent.com/freya022/WarzoneLoadouts/master/data/Weapons.json").openStream()) {
 			Files.write(WEAPONS_PATH, stream.readAllBytes(), CREATE, TRUNCATE_EXISTING);
 		}
 	}
 
 	public static Profiles getProfiles() {
-		return profiles;
+		return getInstance().profiles;
 	}
 
 	public static List<Weapon> getWeapons() {
-		return weapons.getWeapons();
+		return getInstance().weapons.getWeapons();
 	}
 
 	public static Weapon getWeaponById(int weaponId) {
@@ -86,14 +107,14 @@ public class WarzoneLoadouts {
 	}
 
 	public static Perks getPerks() {
-		return perks;
+		return getInstance().perks;
 	}
 
 	public static List<Tactical> getTacticals() {
-		return tacticals.getTacticals();
+		return getInstance().tacticals.getTacticals();
 	}
 
 	public static List<Lethal> getLethals() {
-		return lethals.getLethals();
+		return getInstance().lethals.getLethals();
 	}
 }

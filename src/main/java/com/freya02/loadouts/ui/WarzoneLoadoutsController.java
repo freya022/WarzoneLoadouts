@@ -33,7 +33,7 @@ public class WarzoneLoadoutsController extends LazyWindow {
 			new WindowBuilder("WarzoneLoadouts.fxml", "Warzone Loadouts")
 					.onClose(CloseHandler.SYSTEM_EXIT)
 					.resizable()
-					.create(new WarzoneLoadoutsController(profile));
+					.createBorderless(new WarzoneLoadoutsController(profile));
 		} catch (IOException e) {
 			throw new RuntimeException(e);
 		}
@@ -41,7 +41,7 @@ public class WarzoneLoadoutsController extends LazyWindow {
 
 	@Override
 	protected void onInitialized() {
-		getWindow().getStage().setMinWidth(1000);
+		getWindow().getStage().setMinWidth(1100);
 		getWindow().getStage().setMinHeight(500);
 
 		profileLabel.setText(profile.getName());

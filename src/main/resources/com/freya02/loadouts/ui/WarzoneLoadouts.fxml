@@ -67,7 +67,7 @@
                                     <Label id="title2" text="Primaire" />
                                     <VBox spacing="5.0">
                                        <children>
-                                          <Label fx:id="primaryLabel" alignment="CENTER" maxWidth="1.7976931348623157E308" text="Fusils d'assaut - AK-47" />
+                                          <Label fx:id="primaryLabel" alignment="CENTER" maxWidth="1.7976931348623157E308" />
                                           <GridPane fx:id="primaryGrid" hgap="8.0">
                                             <columnConstraints>
                                                 <ColumnConstraints hgrow="SOMETIMES" />
@@ -97,7 +97,7 @@
                                     <Label id="title2" text="Secondaire" />
                                     <VBox spacing="5.0">
                                        <children>
-                                          <Label fx:id="secondaryLabel" alignment="CENTER" maxWidth="1.7976931348623157E308" text="Armes de poing - Magnum" />
+                                          <Label fx:id="secondaryLabel" alignment="CENTER" maxWidth="1.7976931348623157E308" />
                                           <GridPane fx:id="secondaryGrid" hgap="8.0">
                                              <columnConstraints>
                                                 <ColumnConstraints hgrow="SOMETIMES" />

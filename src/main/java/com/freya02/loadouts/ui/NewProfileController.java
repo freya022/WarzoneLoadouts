@@ -25,7 +25,7 @@ public class NewProfileController extends AwaitableWindow<Profile> {
 	public static Profile createProfile() {
 		try {
 			final NewProfileController controller = new NewProfileController();
-			new WindowBuilder("NewProfile.fxml", "Nouveau profil Warzone").create(controller);
+			new WindowBuilder("NewProfile.fxml", "Nouveau profil Warzone").createBorderless(controller);
 
 			return controller.waitFor();
 		} catch (IOException e) {

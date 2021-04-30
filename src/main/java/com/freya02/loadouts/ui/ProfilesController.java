@@ -25,7 +25,7 @@ public class ProfilesController extends AwaitableWindow<Profile> {
 	public static Profile selectProfile() {
 		try {
 			final ProfilesController controller = new ProfilesController();
-			new WindowBuilder("Profiles.fxml", "Profils Warzone").resizable().create(controller);
+			new WindowBuilder("Profiles.fxml", "Profils Warzone").resizable().createBorderless(controller);
 
 			return controller.waitFor(true);
 		} catch (IOException e) {
