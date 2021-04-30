@@ -10,6 +10,10 @@ public class ChoosedAttachment {
 		this.attachment = attachment;
 	}
 
+	public int getAttachmentLevel() {
+		return attachment.getRequiredLevel();
+	}
+
 	public String getCategoryName() {
 		return categoryName;
 	}

@@ -12,9 +12,17 @@ Label, JFXButton {
     -fx-border-color: rgb(225, 225, 225);
 }
 
+#title, #title2 {
+    -fx-text-fill: white;
+}
+
 #title {
-    -fx-font-size: 28px;
     -fx-padding: 0 10px;
+    -fx-font-size: 28px;
+}
+
+#title2 {
+    -fx-font-size: 24px;
 }
 
 #pane1 {
@@ -44,4 +52,9 @@ JFXButton:hover {
 
 .unlockedWeapon StackPane:hover SVGPath {
     -fx-fill: rgb(255, 0, 0);
+}
+
+.perkBox {
+    -fx-border-color: rgb(225, 225, 225);
+    -fx-padding: 0 10px;
 }

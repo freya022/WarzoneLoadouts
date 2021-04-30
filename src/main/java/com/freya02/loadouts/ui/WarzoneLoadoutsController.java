@@ -1,8 +1,6 @@
 package com.freya02.loadouts.ui;
 
-import com.freya02.loadouts.Profile;
-import com.freya02.loadouts.WarzoneLoadouts;
-import com.freya02.loadouts.Weapon;
+import com.freya02.loadouts.*;
 import com.freya02.ui.FXUtils;
 import com.freya02.ui.UILib;
 import com.freya02.ui.window.CloseHandler;
@@ -16,13 +14,15 @@ import javafx.scene.layout.*;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.List;
 
 public class WarzoneLoadoutsController extends LazyWindow {
 	private final Profile profile;
 
-	@FXML private Label profileLabel;
+	@FXML private Label profileLabel, primaryLabel, secondaryLabel, perk1Label, perk2Label, perk3Label, lethalLabel, tacticalLabel;
 	@FXML private ImageView profileView;
 	@FXML private VBox unlockedBox;
+	@FXML private GridPane primaryGrid, secondaryGrid;
 
 	public WarzoneLoadoutsController(Profile profile) {
 		this.profile = profile;
@@ -41,6 +41,9 @@ public class WarzoneLoadoutsController extends LazyWindow {
 
 	@Override
 	protected void onInitialized() {
+		getWindow().getStage().setMinWidth(1000);
+		getWindow().getStage().setMinHeight(500);
+
 		profileLabel.setText(profile.getName());
 		profileView.setImage(profile.getImage());
 
@@ -96,6 +99,34 @@ public class WarzoneLoadoutsController extends LazyWindow {
 	}
 
 	@FXML private void onNewLoadoutClicked(MouseEvent event) {
+		primaryGrid.getChildren().clear();
+		secondaryGrid.getChildren().clear();
 
+		final RandomLoadout randomLoadout = RandomLoadout.fromProfile(profile);
+
+		final ChoosedWeapon primary = randomLoadout.getPrimary();
+		final ChoosedWeapon secondary = randomLoadout.getSecondary();
+
+		primaryLabel.setText(primary.getWeapon().getCategory() + " - " + primary.getWeapon().getName());
+		secondaryLabel.setText(secondary.getWeapon().getCategory() + " - " + secondary.getWeapon().getName());
+
+		showAttachments(primary, primaryGrid);
+		showAttachments(secondary, secondaryGrid);
+
+		perk1Label.setText(randomLoadout.getFirstPerk().getName());
+		perk2Label.setText(randomLoadout.getSecondPerk().getName());
+		perk3Label.setText(randomLoadout.getThirdPerk().getName());
+
+		lethalLabel.setText(randomLoadout.getLethal().getName());
+		tacticalLabel.setText(randomLoadout.getTactical().getName());
+	}
+
+	private void showAttachments(ChoosedWeapon secondary, GridPane secondaryGrid) {
+		List<ChoosedAttachment> choosedAttachments = secondary.getChoosedAttachments();
+		for (int i = 0, choosedAttachmentsSize = choosedAttachments.size(); i < choosedAttachmentsSize; i++) {
+			ChoosedAttachment attachment = choosedAttachments.get(i);
+
+			secondaryGrid.addRow(i, new Label(attachment.getCategoryName()), new Label(attachment.getAttachmentName()), new Label("Lvl " + attachment.getAttachmentLevel()));
+		}
 	}
 }

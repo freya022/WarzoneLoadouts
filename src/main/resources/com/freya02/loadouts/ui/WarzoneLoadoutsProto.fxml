@@ -81,6 +81,23 @@
                                                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                             </rowConstraints>
+                                             <children>
+                                                <Label text="Muzzle" />
+                                                <Label text="Barrel" GridPane.rowIndex="1" />
+                                                <Label text="Body" GridPane.rowIndex="2" />
+                                                <Label text="Optic" GridPane.rowIndex="3" />
+                                                <Label text="Stock" GridPane.rowIndex="4" />
+                                                <Label text="KGB Eliminator" GridPane.columnIndex="1" />
+                                                <Label text="20&quot; Spetsnaz RPK Barrel" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                                <Label text="Tiger Team Spotlight" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                                <Label text="Millstop Reflex" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                                <Label text="No Stock" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                                <Label text="Lvl 38" GridPane.columnIndex="2" />
+                                                <Label text="Lvl 48" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                                                <Label text="Lvl 40" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                                                <Label text="Lvl 2" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                                                <Label text="Lvl 36" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                                             </children>
                                           </GridPane>
                                        </children>
                                     </VBox>
@@ -111,6 +128,23 @@
                                                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                              </rowConstraints>
+                                             <children>
+                                                <Label text="Optic" />
+                                                <Label text="Barrel" GridPane.rowIndex="1" />
+                                                <Label text="Muzzle" GridPane.rowIndex="2" />
+                                                <Label text="Handle" GridPane.rowIndex="3" />
+                                                <Label text="Magazine" GridPane.rowIndex="4" />
+                                                <Label text="Quickdot LED" GridPane.columnIndex="1" />
+                                                <Label text="5.9&quot; Cavalry Lancer" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                                <Label text="Flashguard .45 APC" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                                <Label text="SARS Jungle Grip" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                                <Label text="Fast Mag" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                                <Label text="Lvl 2" GridPane.columnIndex="2" />
+                                                <Label text="Lvl 9" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                                                <Label text="Lvl 8" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                                                <Label text="Lvl 23" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                                                <Label text="Lvl 11" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                                             </children>
                                           </GridPane>
                                        </children>
                                     </VBox>
@@ -138,19 +172,19 @@
                               <VBox alignment="CENTER" styleClass="perkBox">
                                  <children>
                                     <Label id="title2" text="Atout 1" />
-                                    <Label fx:id="perk1Label" />
+                                    <Label fx:id="perk1Label" text="Démineur" />
                                  </children>
                               </VBox>
                               <VBox alignment="CENTER" styleClass="perkBox" GridPane.columnIndex="1">
                                  <children>
                                     <Label id="title2" text="Atout 2" />
-                                    <Label fx:id="perk2Label" />
+                                    <Label fx:id="perk2Label" text="Détermination" />
                                  </children>
                               </VBox>
                               <VBox alignment="CENTER" styleClass="perkBox" GridPane.columnIndex="2">
                                  <children>
                                     <Label id="title2" text="Atout 3" />
-                                    <Label fx:id="perk3Label" />
+                                    <Label fx:id="perk3Label" text="Traqueur" />
                                  </children>
                               </VBox>
                            </children>
@@ -173,13 +207,13 @@
                               <VBox alignment="CENTER" styleClass="perkBox">
                                  <children>
                                     <Label id="title2" text="Mortel" />
-                                    <Label fx:id="lethalLabel" />
+                                    <Label fx:id="lethalLabel" text="Semtex" />
                                  </children>
                               </VBox>
                               <VBox alignment="CENTER" styleClass="perkBox" GridPane.columnIndex="1">
                                  <children>
                                     <Label id="title2" text="Tactique" />
-                                    <Label fx:id="tacticalLabel" />
+                                    <Label fx:id="tacticalLabel" text="Grenade sensorielle" />
                                  </children>
                               </VBox>
                            </children>
